@@ -1,0 +1,365 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.25rem;
+}
+.sidebar{
+    width: 20.5rem;
+    background-color: #000;
+    border-radius: 1rem;
+    margin: 5px;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 5px;
+    padding: 0 1.5rem 0 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.5rem;
+}
+.nav-option a{
+    font-size: 1.2rem;
+    margin-left: 1.25rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    height: 100%;
+    padding: 0.45rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.icons{display: flex;}
+.icons i{
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    font-size: 1.27rem;
+    opacity: 1;
+}
+.cards{
+    margin-top: 0.25rem;
+}
+.box{
+    background-color: #232323;
+    height: 8.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.75rem 0 1.75rem 0;
+    justify-content: center;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.box-p2{
+    font-size: 0.84rem;
+    opacity: 0.9;
+    margin-top: 0.25rem;
+}
+.badge{
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    margin-top: 0.3rem;
+    height: 2rem;
+    width: fit-content;
+    opacity: 0.8;
+}
+.badge:hover{
+    opacity: 1;
+}
+.icon{
+    height: 30px;
+    justify-content: center;
+}
+#btns{
+    background-color: black;
+    color: white;
+} 
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 1.2rem;
+    justify-content: space-between;
+    background-color: #121212;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sni{
+    margin-left: 3rem;
+}
+.navo{
+    margin-right: 1.5rem;
+}
+.aro{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.aro:hover{
+    opacity: 1;
+}
+@media (max-width: 1000px) {
+    .hide{
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    #btns{
+        display:none;
+    }
+}
+@media (max-width: 600px) {
+    .sidebar{
+        width: 15rem;
+    }
+}
+@media (max-width: 375px) {
+    .sidebar{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.album-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+h1{
+    line-height: 8px;
+}
+.maincards{
+    margin-top: 2rem;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 2px solid white;
+    opacity: 0.5;
+}
+.right-player{
+    width: 25%;
+}
+.music-player{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.playback-bar input{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: blue;
+}
+.playback-bar input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.playback-bar input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -6px;
+    border-radius: 50%;
+    background-color: #1bd760;
+}
+.player-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-options .icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-options .icon:hover{
+    opacity: 1;
+}
+.player{
+    width: 50%;
+}
+.left-player{
+    width: 25%;
+}
+.track-card img{
+    height:3rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+.track-card{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.track-main-img{ 
+    width: 4rem;
+    cursor: pointer;
+}
+.track-info{
+    margin-right: 4rem;
+}
+.track-title{
+    font-weight: 600;
+    opacity: 0.9;
+    padding-bottom: 0.25rem;
+}
+.track-singer{
+    font-weight: 300;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.track-singer:hover{
+    font-weight: 350;
+    opacity: 0.8;
+}
+button{
+    cursor: pointer;
+}
+.track-icons{
+    margin-right: 0.5rem;
+}
+.icon1{
+    margin-right: 0.5rem;
+    opacity: 0.5;
+}
+.icon2{
+    opacity: 0.5;
+}
+.icon1:hover{
+    opacity: 0.8;
+}
+.icon2:hover{
+    opacity: 0.8;
+}
+@media (max-width: 1100px ) {
+    .track-icons{
+        display: none;
+    }
+}
+@media (max-width: 850px ) {
+    .track-info{
+        display: none;
+    }
+}
+.simbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.i1{
+    margin-left: 1rem;
+    opacity: 0.6;
+}
+.i1:hover{
+    opacity: 0.8;
+}
+.i2{
+    margin-left: 0.5rem;
+}
+.vol-range{
+    appearance: none;
+    margin-right: 3rem;
+    width: 100px;
+}
+.i2::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.i2::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -6px;
+    border-radius: 50%;
+    background-color: #1bd760;
+}
+.i3{
+    opacity: 0.9;
+}
